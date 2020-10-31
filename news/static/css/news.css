@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f1faee;
+}
+
+body .navi-menu nav {
+  height: 200px;
+  background-image: url("../images/Asset 1.png");
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+}
+
+body .navi-menu nav.navbar {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+body .navi-menu nav .navbar-collapse {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+body .navi-menu nav .navbar-collapse ul li a {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: x-large;
+}
+
+body .navi-menu nav .navbar-collapse ul li a:hover {
+  color: #84e99a;
+}
+
+body .navi-menu nav #nav-logo {
+  width: 120px;
+}
+
+body header .container-fluid {
+  background-image: url("../SVG/Asset 3.svg");
+}
+
+body header .container-fluid::before {
+  content: "";
+  display: block;
+  height: 180px;
+}
+
+body header .container-fluid .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .container-fluid .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .container-fluid .title h1 {
+  font-family: "Oswald", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#2e9145), to(#99ca3d));
+  background: linear-gradient(to right, #2e9145, #99ca3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  text-align: right;
+  width: 500px;
+  position: relative;
+}
+
+body header .container-fluid .title h1::after {
+  content: '';
+  background-image: url("../SVG/Asset 13.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 150px;
+  position: absolute;
+  top: 25px;
+  right: -50px;
+}
+
+body header .container-fluid .title h2 {
+  font-family: "Oswald", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#2e9145), to(#99ca3d));
+  background: linear-gradient(to right, #2e9145, #99ca3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+@media (max-width: 771px) {
+  body header .container-fluid::before {
+    content: "";
+    display: block;
+    height: 180px;
+  }
+  body header .container-fluid .row {
+    display: block;
+  }
+  body header .container-fluid .title h1 {
+    text-align: center;
+    margin: auto;
+  }
+  body header .container-fluid .title h1::after {
+    display: block;
+    width: 40px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    -webkit-transform: rotate(90deg) translate(-100%, 30%);
+            transform: rotate(90deg) translate(-100%, 30%);
+  }
+  body header .container-fluid .title h2 {
+    font-family: "Oswald", sans-serif;
+    background: -webkit-gradient(linear, left top, right top, from(#2e9145), to(#99ca3d));
+    background: linear-gradient(to right, #2e9145, #99ca3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    width: 300px;
+    margin: -50px auto 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  body .navi-menu nav {
+    height: auto;
+    background-image: none;
+    background-color: #dde6e2d2;
+  }
+  body .navi-menu nav .navbar-collapse ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .navi-menu nav .navbar-collapse ul li {
+    padding: 10px;
+  }
+  body .navi-menu nav .navbar-collapse ul li a {
+    color: #2e2525;
+    font-size: large;
+  }
+  body .navi-menu nav .navbar-collapse ul li a:hover {
+    color: #84e99a;
+  }
+  body .navi-menu nav #nav-logo {
+    width: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=news.css.map */

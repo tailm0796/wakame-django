@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css_file %}
+    {% static 'css/home.css' %}
+{% endblock css_file %}
+{% block contents %}
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <img src="{% static 'SVG/Asset 2.svg' %}" alt="">
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <h1 class="text-sm-center text-lg-right" id="club-name">CLB Tiếng Nhật WAKAME</h1>
+                        <p class="content-text" id="club-intro">Với sứ mệnh mang tiếng Nhật tới gần hơn với sinh
+                            viên trường ĐH
+                            CNTT, giúp các bạn sinh viên có được một công cụ trực quan để học tiếng Nhật cũng như có
+                            được một cơ hội để dễ dàng
+                            tiếp cận với những buổi giao lưu cùng người bản xứ để có thể trau dồi kỹ năng nói của
+                            bản
+                            thân.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center search">
+            <form class="form-inline">
+                <button class="btn button" type="submit"><i class="fas fa-search fa-lg"></i></button>
+                <input class="form-control form" type="text" placeholder="Search">
+            </form>
+        </div>
+    </div>
+</header>
+<section class="leader-board">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="intro-title">BAN CHỦ NHIỆM</h1>
+        </div>
+        <div class="row justify-content-center align-items-center chunhiem" style="background-color: #EBF5E7;">
+            <div class="col-sm-5">
+                <img src="{% static 'SVG/Asset 4.svg' %}" alt="" class="image">
+            </div>
+            <div class="col-sm-5 text-center info">
+                <h2>NGUYỄN THANH NHÃ</h2>
+                <h5>Chủ nhiệm CLB WAKAME</h5>
+                <p>SINH VIÊN KHOA KHOA HỌC VÀ KỸ THUẬT THÔNG TIN<BR>ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</BR></p>
+            </div>
+        </div>
+        <div class="row phochunhiem">
+            <div class="col-6">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-5">
+                        <img src="{% static 'SVG/Asset 4.svg' %}" alt="" class="image">
+                    </div>
+                    <div class="col-sm-5 info text-center">
+                        <h4>LÊ MINH TÀI</h4>
+                        <h6>Phó chủ nhiệm</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-5">
+                        <img src="{% static 'SVG/Asset 4.svg' %}" alt="" class="image">
+                    </div>
+                    <div class="col-sm-5 info text-center">
+                        <h4>LÊ MINH TÀI</h4>
+                        <h6>Phó chủ nhiệm</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="giatri">
+    <div class="container">
+        <div class="row justify-content-center title">
+            <h1>LỢI ÍCH MANG LẠI</h1>
+            <h5>Với mục tiêu mang lại các giá trị thực tế, BCN CLB sẽ luôn cố gắng để mang lại những giá trị thiết
+                thực nhất cho các bạn.</h5>
+        </div>
+        <div class="row content">
+            <div class="col-12 col-sm-6 col-lg-4 my-2">
+                <div class="card h-100 card-content">
+                    <img class="card-img-top m-auto mt-lg-5 mb-md-2 image" src="{% static 'SVG/Asset 5.svg' %}" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">GIAO TIẾP</h4>
+                        <p class="card-text text-justify">CLB sẽ tổ chức các buổi nói chuyện cũng như những buổi
+                            giao lưu với người Nhật để giúp các bạn có thể học hỏi và rèn luyện thêm khả năng giao
+                            tiếp của bản thân.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 my-2">
+                <div class="card h-100 card-content">
+                    <img class="card-img-top m-auto mt-lg-5 mb-md-2 image" src="{% static 'SVG/Asset 6.svg' %}" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">TIN TỨC</h4>
+                        <p class="card-text text-justify">Cập nhật những tin tức mới nhất về Nhật Bản cũng như những
+                            thông báo của trường để giúp các bạn nắm bắt thông tin nhanh và kịp thời.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 my-2">
+                <div class="card h-100 card-content">
+                    <img class="card-img-top m-auto mt-lg-5 mb-md-2 image" src="{% static 'SVG/Asset 7.svg' %}" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">HỌC TẬP</h4>
+                        <p class="card-text text-justify">Cung cấp các bài học Tiếng Nhật miễn phí, giúp các bạn
+                            nhanh chóng có được nền tảng tiếng Nhật thật vững chắc để tiếp tục học nâng cao.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 my-2">
+                <div class="card h-100 card-content">
+                    <img class="card-img-top m-auto mt-lg-5 mb-md-2 image" src="{% static 'SVG/Asset 8.svg' %}" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">VĂN HOÁ</h4>
+                        <p class="card-text text-justify">Tìm hiểu những nét văn hoá đăc trưng và thú vị qua các bài
+                            đăng để chuẩn bị sẵn hành trang du học sau này cũng như làm phong phú kiến thức bản
+                            thân.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 my-2">
+                <div class="card h-100 card-content">
+                    <img class="card-img-top m-auto mt-lg-5 mb-md-2 image" src="{% static 'SVG/Asset 9.svg' %}" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">MẸO HỮU ÍCH</h4>
+                        <p class="card-text text-justify">Những mẹo hữu ích trong việc học tiếng Nhật nói riêng và
+                            việc học tại trường nói chung, giúp các bạn thuận lợi hơn trong 4 năm học tập và nghiên
+                            cứu tại trường.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 my-2">
+                <div class="card h-100 card-content">
+                    <img class="card-img-top m-auto mt-lg-5 mb-md-2 image" src="{% static 'SVG/Asset 10.svg' %}" alt="">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">KỸ NĂNG</h4>
+                        <p class="card-text text-justify">Trau dồi kỹ năng mềm của bản thân thông qua các hoạt
+                            động giao lưu, tham gia vào tổ chức hoạt động để cải thiện kỹ năng làm việc nhóm còn
+                            thiếu của sinh viên IT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<footer>
+    <div class="container pt-sm-5 mt-sm-5">
+        <div class="row content">
+            <div class="col-sm-4 address">
+                <p><i class="fas fa-map-marker-alt px-sm-2"></i>Trường Đại học Công nghệ Thông tin, khu phố 6,
+                    P.Linh Trung, Q.Thủ Đức, TP.Hồ Chí Minh</p>
+                <p><i class="far fa-envelope px-sm-2"></i>Wakame-uit@gmail.com</p>
+                <p><i class="fas fa-mobile-alt px-sm-2"></i>+84 969 939 706</p>
+            </div>
+            <div class="col-sm-5 offset-sm-3 text-center">
+                <h3 class="pb-sm-2 invite">THAM GIA CÙNG CHÚNG MÌNH</h3>
+                <div>
+                    <a name="" id="" class="btn btn-block btn-danger" href="#" role="button">Đăng
+                        Nhập</a>
+                    <a name="" id="" class="btn btn-block btn-dark" href="#" role="button">Đăng Ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock contents %}

@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$text-color: #006937;
+%text-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: bold;
+    color: #006937;
+}
+
+@mixin text-gra($mau1, $mau2) {
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(to right, $mau1, $mau2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body {
+    background-color: #f1faee;
+    .navi-menu {
+        nav {
+            height: 200px;
+            background-image: url("../images/Asset\ 1.png");
+            background-size: auto 200px;
+            background-repeat: no-repeat;
+            &.navbar {
+                align-items: unset;
+            }
+            .navbar-collapse {
+                align-items: unset;
+                margin-top: 10px;
+                margin-left: 10px;
+                ul {
+                    li {
+                        a {
+                            color: rgb(255, 255, 255);
+                            font-family: "Oswald", sans-serif;
+                            font-weight: 400;
+                            font-size: x-large;
+                            &:hover {
+                                color: rgb(132, 233, 154);
+                            }
+                        }
+                    }
+                }
+            }
+            #nav-logo {
+                width: 120px;
+            }
+        }
+    }
+    header {
+        .container-fluid {
+            background-image: url('../SVG/Asset\ 3.svg');
+            &::before {
+                content: "";
+                display: block;
+                height: 280px;
+            }
+            #club-name {
+                @include text-gra(#2e9145, #99ca3d);
+                font-weight: 700;
+                font-size: 4rem;
+            }
+            #club-intro {
+                @extend %text-content;
+            }
+            .search {
+                margin-top: 100px;
+                .form-inline {
+                    width: 50%;
+                }
+                .button {
+                    background-color: #3bb54a;
+                    border-style: solid;
+                    border-radius: 0px;
+                    border-top-left-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                    color: white;
+                    font-family: "Oswald", sans-serif;
+                    font-weight: bold;
+                    font-size: medium;
+                    width: 20%;
+                    height: 50px;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+                .form {
+                    border-radius: 0px 25px 25px 0px;
+                    border-color: #3bb54a;
+                    padding-left: 20px;
+                    width: 80%;
+                    height: 50px;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    .leader-board {
+        .intro-title {
+            @include text-gra(#0c6b37, #2ab56c);
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 160px 0px 40px 0px;
+        }
+        .chunhiem {
+            padding: 40px 80px;
+            .image {
+                width: 250px;
+            }
+            .info {
+                @include text-gra(#0c6b37, #2ab56c);
+            }
+        }
+        .phochunhiem {
+            padding: 20px 100px;
+            .image {
+                width: 120px;
+            }
+            .info {
+                @include text-gra(#0c6b37, #2ab56c);
+            }
+        }
+    }
+    .giatri {
+        margin: 50px 0px;
+        .title {
+            margin: 40px 0px;
+            @include text-gra(#0c6b37, #2ab56c);
+            h1{
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            }
+        }
+        .content {
+            .card-content {
+                margin: 20px 10px;
+                padding: 10px 10px;
+                background-color: #e3f0e7;
+                box-shadow: 6px 6px 10px #c2efee;
+                .image {
+                    width: 200px;
+                    height: 250px;
+                }
+                .card-body {
+                    font-family: "Quicksand", sans-serif;
+                    font-weight: bold;
+                    h4 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .btn-success {
+            border-radius: 20px;
+        }
+    }
+    footer {
+        .content{
+            .address{
+                font-size: small;
+            }
+            .invite{
+                @include text-gra(#0c6b37, #2ab56c);
+                font-size: x-large;
+            }
+        }
+        &::after {
+            content: "Copyright © 2020 by WAKAME TEAM";
+            background-color: $text-color;
+            display: block;
+            height: 50px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 30px;
+        }
+    }
+}
+@media(max-width:1024px){
+    body{
+        header {
+            .container-fluid {
+                #club-name {
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+@media(max-width:715px){
+    body{
+        .navi-menu{
+            nav{
+                .navbar-brand{
+                    margin-right: 0px;
+                }
+            }
+        }
+        header {
+            .container-fluid {
+                &::before {
+                    height: 180px;
+                }
+                #club-name {
+                    margin: 60px 0px;
+                }
+                .search {
+                    margin-top: 60px;
+                    
+                    .button {
+                        font-size: small;
+                    }
+                }
+            }
+        }
+        .leader-board {
+            .intro-title {
+                margin: 80px 0px 40px 0px;
+            }
+            .chunhiem {
+                padding: 40px 0px;
+                .image {
+                    width: 200px;
+                }
+            }
+            .phochunhiem {
+                padding: 20px 0px;
+            }
+        }
+        .giatri {
+            .title {
+                margin: 10px 0px;
+                h5{
+                    text-align: center;
+                }
+            }
+            .content {
+                .card-content {
+                    margin: 20px 5px;
+                    padding: 0px 0px;
+                    .image {
+                        width: 200px;
+                        height: 250px;
+                    }
+                    .card-body {
+                        font-family: "Quicksand", sans-serif;
+                        font-weight: normal;
+                        padding: 15px;
+                        h4 {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:625px){
+    body{
+        .navi-menu {
+            nav {
+                height: auto;
+                background-image: none;
+                background-color: #dde6e2d2;
+                .navbar-collapse {
+                    ul {
+                        flex-direction: row;
+                        li {
+                            padding: 10px;
+                            a {
+                                color: rgb(46, 37, 37);
+                                font-size: large;
+                                &:hover {
+                                    color: rgb(132, 233, 154);
+                                }
+                            }
+                        }
+                    }
+                }
+                #nav-logo {
+                    width: 100px;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+        header {
+            .container-fluid {
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 150px;
+                }
+                #club-name {
+                    font-size: 3rem;
+                    text-align: center;
+                    margin: 20px 0px;
+                }
+                #club-intro{
+                    font-size: 16px;
+                    padding: 0px 0px;
+                }
+                .search {
+                    margin-top: 30px;
+                    .form-inline {
+                        width: 80%;
+                    }
+                    .button {
+                        height: 40px;
+                        font-size: small;
+                    }
+                    .form{
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        .giatri {
+            margin: 10px 0px;
+            .title {
+                margin: 0px 0px;
+                h5{
+                    font-size: 1.2rem;
+                }
+            }
+            .content {
+                .card-content {
+                    margin: 0px 5px 10px 5px;
+                    padding: 0px 0px;
+                    box-shadow: none;
+                    .image{
+                        width: 90%;
+                    }
+                    .card-body {
+                        font-family: "Quicksand", sans-serif;
+                        font-weight: bold;
+                        padding: 0px 10px 10px;
+                        margin-top: 0px;
+                        h4 {
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:575px){
+    body{
+        .navi-menu {
+            nav {
+                height: auto;
+                background-image: none;
+                background-color: #dde6e2d2;
+                .navbar-collapse {
+                    ul {
+                        flex-direction: row;
+                        li {
+                            padding: 10px;
+                            a {
+                                color: rgb(46, 37, 37);
+                                font-size: large;
+                                &:hover {
+                                    color: rgb(132, 233, 154);
+                                }
+                            }
+                        }
+                    }
+                }
+                #nav-logo {
+                    width: 100px;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+        header {
+            .container-fluid {
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 150px;
+                }
+                #club-name {
+                    font-size: 3rem;
+                    text-align: center;
+                    margin: 20px 0px;
+                }
+                #club-intro{
+                    font-size: 16px;
+                    padding: 0px 30px;
+                }
+                .search {
+                    margin-top: 30px;
+                    .form-inline {
+                        width: 80%;
+                    }
+                    .button {
+                        height: 40px;
+                        font-size: small;
+                    }
+                    .form{
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        .leader-board {
+            .intro-title {
+                font-size: 3rem;
+                font-weight: 700;
+                margin: 80px 0px 40px 0px;
+            }
+            .chunhiem {
+                padding: 40px 80px;
+                .image {
+                    width: 200px;
+                    display: block;
+                    margin: auto;
+                    padding-bottom: 10px;
+                }
+                .info {
+                    h2{
+                        font-size: x-large;
+                    }
+                    h5{
+                        font-size: small;
+                    }
+                    p{
+                        font-size: smaller;
+                    }
+                }
+            }
+            .phochunhiem {
+                padding: 20px 0px;
+                .image {
+                    width: 100px;
+                    display: block;
+                    margin: auto;
+                    padding-bottom: 5px;
+                }
+                .info {
+                    h4{
+                        font-size: small;
+                        margin-bottom: 0;
+                    }
+                    h6{
+                        font-size: x-small;
+                    }
+                }
+            }
+        }
+        .giatri {
+            margin: 20px 0px;
+            .title {
+                margin: 0px 0px;
+                h5{
+                    font-size: 1.2rem;
+                }
+            }
+            .content {
+                .card-content {
+                    margin: 20px 20px 0px 20px;
+                    padding: 20px 20px;
+                    box-shadow: none;
+                    .card-body {
+                        font-family: "Quicksand", sans-serif;
+                        font-weight: bold;
+                        h4 {
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .btn-success {
+                margin-top: 20px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:320px){
+    body{
+        .navi-menu {
+            nav {
+                .navbar-collapse {
+                    ul {
+                        li {
+                            a {
+                                font-size: small;
+                                &:hover {
+                                    color: rgb(132, 233, 154);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .leader-board {
+            .intro-title {
+                font-size: 2rem;
+                font-weight: 700;
+                margin: 40px 0px 10px 0px;
+            }
+            .chunhiem {
+                padding: 0px 0px;
+                .image {
+                    width: 150px;
+                }
+            }
+        }
+        .giatri {
+            margin: 20px 0px;
+            .title {
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
