@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css_file %}
+{% static 'css/login.css' %}
+{% endblock css_file %}
+{% block contents %}
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <h2>Log In</h2>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Log In</button>
+                <a href="{% url 'signup' %}">Dang ky</a>
+            </form>
+        </div>
+    </div>
+</header>
+{% endblock contents %}
