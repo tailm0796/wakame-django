@@ -5,6 +5,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     imglink = models.CharField(max_length=200)
     author = models.ForeignKey('accounts.CustomUser', on_delete=models.CASCADE)
+    date = models.DateTimeField(auto_now_add=True)
     body = models.TextField()
     recap = models.TextField()
     def __str__(self):
