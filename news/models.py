@@ -4,7 +4,7 @@ from django.urls import reverse
 class Post(models.Model):
     title = models.CharField(max_length=200)
     imglink = models.CharField(max_length=200)
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    author = models.ForeignKey('accounts.CustomUser', on_delete=models.CASCADE)
     body = models.TextField()
     recap = models.TextField()
     def __str__(self):
@@ -12,5 +12,4 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('news_detail',args=[str(self.id)])
     def save(self, *args, **kwargs):
-        self.recap = 'jdsjfijdsifjsdijfisdji'
         super().save()
