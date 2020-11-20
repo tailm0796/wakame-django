@@ -3,8 +3,8 @@ from .views import HomePageView, HomePageNews, HomePageNewsDetail, HomePageNewsC
 urlpatterns = [
     path('',HomePageView.as_view(), name = 'home'),
     path('news/',HomePageNews.as_view(), name = 'news'),
-    path('news/<int:pk>/',HomePageNewsDetail.as_view(), name = 'news_detail'),
+    path('news/<uuid:pk>/',HomePageNewsDetail.as_view(), name = 'news_detail'),
     path('news/new/',HomePageNewsCreate.as_view(), name = 'news_create'),
-    path('news/edit/<int:pk>/',HomePageNewsEdit.as_view(),name = 'news_edit'),
-    path('news/delete/<int:pk>/',HomePageNewsDelete.as_view(), name = 'news_delete'),
+    path('news/edit/<uuid:pk>/',HomePageNewsEdit.as_view(),name = 'news_edit'),
+    path('news/delete/<uuid:pk>/',HomePageNewsDelete.as_view(), name = 'news_delete'),
 ]
