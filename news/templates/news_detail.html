@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <h1>{{ post.title }}</h1>
-            <p>{{ post.body }}</p>
+            <p>{{ post.body|linebreaks }}</p>
         </div>
         {% if user.is_authenticated %}
         <div class="row justify-content-center">
