@@ -15,19 +15,28 @@
         <div class="row">
             {% for post in object_list %}
                 <div class="col-sm-6 col-md-4 my-4">
-                    <div class="card card-content">
-                        <img class="card-img-top m-auto mt-lg-5 mb-md-2 image" src="{{ post.imglink }}" alt="">
+                    <div class="card h-100">
+                        <img class="card-img-top m-auto mb-md-2 image" src="{{ post.imglink }}" alt="">
                         <div class="card-body text-center">
-                            <h4 class="card-title"><a href="{% url 'news_detail' post.pk %}">{{ post.title }}</a></h4>
-                            <p class="card-text text-justify">{{ post.recap }}</p>
+                            <h4 class="card-title text-justify"><a href="{{ post.get_absolute_url }}">{{ post.title|truncatewords:20 }}</a></h4>
+                            <p class="card-text text-justify">{{ post.recap|truncatewords:50 }}</p>
                         </div>
                         <div class="card-footer text-muted">
-                            <p>{{ post.author }} - {{ post.date }}</p>
+                            <p class="mb-0">{{ post.author }} - {{ post.date }}</p>
                         </div>
                     </div>
                 </div>
             {% endfor %}
         </div>
+        {% if user.is_authenticated %}
+        <div class="row justify-content-center">
+            <div class="col-sm-2">
+                <a class="btn btn-success btn-block" href="{% url 'news_create' %}" role="button">ADD NEWS</a>
+            </div>
+        </div>
+        {% else %}
+        <p>khong</p>
+        {% endif %}
     </div>
 </header>
 {% endblock contents %}

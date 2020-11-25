@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block css_file %}
-    {% static 'css/news_detail.css' %}
+{% static 'css/news_detail.css' %}
 {% endblock css_file %}
 {% block contents %}
 <header>
@@ -16,8 +16,18 @@
             <h1>{{ post.title }}</h1>
             <p>{{ post.body }}</p>
         </div>
+        {% if user.is_authenticated %}
+        <div class="row justify-content-center">
+            <div class="col-sm-2">
+                <a class="btn btn-success btn-block" href="{% url 'news_edit' post.pk %}" role="button">EDIT POST</a>
+                <a class="btn btn-success btn-block" href="{% url 'news_delete' post.pk %}" role="button">DELETE
+                    POST</a>
+            </div>
+        </div>
+        {% else %}
+        <p>khong</p>
+        {% endif %}
+
     </div>
 </header>
-<a class="btn btn-secondary" href="{% url 'news_edit' post.pk %}" role="button">EDIT POST</a>
-<a class="btn btn-secondary" href="{% url 'news_delete' post.pk %}" role="button">DELETE POST</a>
 {% endblock contents %}
