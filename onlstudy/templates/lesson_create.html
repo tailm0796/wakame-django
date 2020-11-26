@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block css_file %}
+    {% static 'css/lesson_create.css' %}
+{% endblock css_file %}
+{% block contents %}
+<header>
+    <div class="container-fluid">
+        <div class="row title">
+            <h1>CLB Tiếng Nhật WAKAME</h1>
+            <h2>Bài học</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-primary">save</button>
+            </form>
+        </div>
+    </div>
+</header>
+<script src="{% static 'js/lesson_create.js' %}"></script>
+{% endblock contents %}

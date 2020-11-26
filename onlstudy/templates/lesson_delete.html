@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css_file %}
+    {% static 'css/lesson_delete.css' %}
+{% endblock css_file %}
+{% block contents %}
+<header>
+    <div class="container-fluid">
+        <div class="row title">
+            <h1>CLB Tiếng Nhật WAKAME</h1>
+            <h2>Bài học</h2>
+        </div>
+    </div>
+    <div class="container">
+        <h1>delete</h1>
+        <div class="row">
+            <form action="" method="post">{% csrf_token %}
+                <p>xoa bai</p>
+                <button type="submit" class="btn btn-primary">delete</button>
+            </form>
+        </div>
+    </div>
+</header>
+{% endblock contents %}
