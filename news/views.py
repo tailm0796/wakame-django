@@ -16,7 +16,7 @@ class HomePageNewsDetail(DetailView):
 class HomePageNewsCreate(LoginRequiredMixin,CreateView):
     model = Post
     template_name = 'news_create.html'
-    fields = ('title','imglink','body','recap')
+    fields = ('title','body','image')
     login_url = 'login'
     def form_valid(self,form):
         form.instance.author = self.request.user
@@ -25,7 +25,7 @@ class HomePageNewsEdit(LoginRequiredMixin,UpdateView):
     model = Post
     template_name = 'news_edit.html'
     #fields = '__all__'
-    fields = ('title','imglink','body','recap')
+    fields = ('title','body','image')
     login_url = 'login'
     def dispatch(self, request, *args, **kwargs):
         obj = self.get_object()
