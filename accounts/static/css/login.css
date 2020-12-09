@@ -59,12 +59,16 @@ body header .container-fluid .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: block;
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  background-color: white;
+  border: 3px outset #2e9145;
 }
 
 body header .container-fluid .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -100,9 +104,28 @@ body header .container-fluid .title h2 {
   background: linear-gradient(to right, #2e9145, #99ca3d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 80px;
-  margin-left: 60px;
+  font-size: 6rem;
+  margin-left: 30px;
   text-align: center;
+  height: 120px;
+  margin: auto;
+}
+
+body header .container-fluid .title form {
+  width: 400px;
+  margin: auto;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+body header .container-fluid .title form button {
+  background-color: #2e9145;
+  width: 150px;
+  font-weight: bolder;
+}
+
+body header .container-fluid .title form a {
+  padding-left: 160px;
 }
 
 @media (max-width: 771px) {
@@ -134,8 +157,14 @@ body header .container-fluid .title h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 80px;
-    width: 300px;
+    width: 400px;
+    height: 150px;
     margin: -50px auto 20px;
+    padding-top: 50px;
+    margin: auto;
+  }
+  body header .container-fluid .title form {
+    padding-top: 40px;
   }
 }
 

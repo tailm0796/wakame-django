@@ -105,6 +105,10 @@ body header .container-fluid .title h2 {
   text-align: center;
 }
 
+body header .container-fluid .title .container h1 {
+  font-size: 10px;
+}
+
 @media (max-width: 771px) {
   body header .container-fluid::before {
     content: "";

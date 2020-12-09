@@ -105,6 +105,141 @@ body header .container-fluid .title h2 {
   text-align: center;
 }
 
+body header .container {
+  height: 1000px;
+}
+
+body header .container h1 {
+  font-size: 80px;
+  padding-left: 45%;
+  color: rgba(0, 133, 29, 0.589);
+}
+
+body header .container .row {
+  border: 3px outset #2e9145;
+  margin: auto;
+  height: 800px;
+  background-color: white;
+}
+
+body header .container .row form {
+  margin: auto;
+  height: 1000px;
+}
+
+body header .container .row form #div_id_title {
+  font-size: 50px;
+  width: 800px;
+  color: #4e1491;
+}
+
+body header .container .row form #div_id_title div {
+  border: 1px outset cadetblue;
+}
+
+body header .container .row form #div_id_body {
+  font-size: 50px;
+  color: #4e1491;
+}
+
+body header .container .row form #div_id_body div {
+  border: 1px outset cadetblue;
+}
+
+body header .container .row form #div_id_image {
+  font-size: 50px;
+  color: #4e1491;
+}
+
+body header .container .row form #div_id_image #id_image {
+  font-size: 20px;
+}
+
+body header .container .row button {
+  background-color: #2e9145;
+  width: 150px;
+  font-weight: bolder;
+}
+
+@media (max-width: 995px) {
+  body header .container-fluid::before {
+    content: "";
+    display: block;
+    height: 180px;
+  }
+  body header .container-fluid .row {
+    display: block;
+  }
+  body header .container-fluid .title h1 {
+    text-align: center;
+    margin: auto;
+  }
+  body header .container-fluid .title h1::after {
+    display: block;
+    width: 40px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    -webkit-transform: rotate(90deg) translate(-100%, 30%);
+            transform: rotate(90deg) translate(-100%, 30%);
+  }
+  body header .container-fluid .title h2 {
+    font-family: "Oswald", sans-serif;
+    background: -webkit-gradient(linear, left top, right top, from(#2e9145), to(#99ca3d));
+    background: linear-gradient(to right, #2e9145, #99ca3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    width: 300px;
+    margin: -50px auto 20px;
+  }
+  body header .container {
+    height: 1000px;
+  }
+  body header .container h1 {
+    font-size: 80px;
+    padding-left: 40%;
+    color: rgba(0, 133, 29, 0.589);
+  }
+  body header .container .row {
+    border: 3px outset #2e9145;
+    margin: auto;
+    height: 800px;
+    background-color: white;
+  }
+  body header .container .row form {
+    margin: auto;
+    height: 1000px;
+  }
+  body header .container .row form #div_id_title {
+    font-size: 50px;
+    width: 500px;
+    color: #4e1491;
+  }
+  body header .container .row form #div_id_title div {
+    border: 1px outset cadetblue;
+  }
+  body header .container .row form #div_id_body {
+    font-size: 50px;
+    color: #4e1491;
+  }
+  body header .container .row form #div_id_body div {
+    border: 1px outset cadetblue;
+  }
+  body header .container .row form #div_id_image {
+    font-size: 50px;
+    color: #4e1491;
+  }
+  body header .container .row form #div_id_image #id_image {
+    font-size: 20px;
+  }
+  body header .container .row button {
+    background-color: #2e9145;
+    width: 150px;
+    font-weight: bolder;
+  }
+}
+
 @media (max-width: 771px) {
   body header .container-fluid::before {
     content: "";
@@ -137,6 +272,51 @@ body header .container-fluid .title h2 {
     width: 300px;
     margin: -50px auto 20px;
   }
+  body header .container {
+    height: 1000px;
+  }
+  body header .container h1 {
+    font-size: 80px;
+    padding-left: 40%;
+    color: rgba(0, 133, 29, 0.589);
+  }
+  body header .container .row {
+    border: 3px outset #2e9145;
+    margin: auto;
+    height: 800px;
+    background-color: white;
+  }
+  body header .container .row form {
+    margin: auto;
+    height: 1000px;
+  }
+  body header .container .row form #div_id_title {
+    font-size: 50px;
+    width: 400px;
+    color: #4e1491;
+  }
+  body header .container .row form #div_id_title div {
+    border: 1px outset cadetblue;
+  }
+  body header .container .row form #div_id_body {
+    font-size: 50px;
+    color: #4e1491;
+  }
+  body header .container .row form #div_id_body div {
+    border: 1px outset cadetblue;
+  }
+  body header .container .row form #div_id_image {
+    font-size: 50px;
+    color: #4e1491;
+  }
+  body header .container .row form #div_id_image #id_image {
+    font-size: 20px;
+  }
+  body header .container .row button {
+    background-color: #2e9145;
+    width: 150px;
+    font-weight: bolder;
+  }
 }
 
 @media (max-width: 660px) {
@@ -166,6 +346,51 @@ body header .container-fluid .title h2 {
     position: fixed;
     top: 0;
     right: 0;
+  }
+  .container {
+    height: 1000px;
+  }
+  .container h1 {
+    font-size: 80px;
+    padding-left: 40%;
+    color: rgba(0, 133, 29, 0.589);
+  }
+  .container .row {
+    border: 3px outset #2e9145;
+    margin: auto;
+    height: 800px;
+    background-color: white;
+  }
+  .container .row form {
+    margin: auto;
+    height: 1000px;
+  }
+  .container .row form #div_id_title {
+    font-size: 50px;
+    width: 500px;
+    color: #4e1491;
+  }
+  .container .row form #div_id_title div {
+    border: 1px outset cadetblue;
+  }
+  .container .row form #div_id_body {
+    font-size: 50px;
+    color: #4e1491;
+  }
+  .container .row form #div_id_body div {
+    border: 1px outset cadetblue;
+  }
+  .container .row form #div_id_image {
+    font-size: 50px;
+    color: #4e1491;
+  }
+  .container .row form #div_id_image #id_image {
+    font-size: 20px;
+  }
+  .container .row button {
+    background-color: #2e9145;
+    width: 150px;
+    font-weight: bolder;
   }
 }
 /*# sourceMappingURL=news_edit.css.map */

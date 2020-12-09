@@ -84,7 +84,126 @@ body {
             }
             
         }
+        .container{
+            height: 1000px;
+            h1{font-size: 80px;
+                padding-left: 45%;  
+                color: rgba(0, 133, 29, 0.589);
+            }           
+            .row{
+                border: 3px outset #2e9145;
+                margin: auto;
+                height: 800px;
+                background-color: white;
+                form{
+                    margin: auto;
+                    height: 1000px;
+                    #div_id_title{
+                        font-size: 50px;
+                        width: 800px;
+                        color: rgb(78, 20, 145);
+                        div{border: 1px outset cadetblue;}
+                    }
+                    #div_id_body{font-size: 50px;
+                        color: rgb(78, 20, 145);
+                        div{border: 1px outset cadetblue;}
+
+                    }
+                    #div_id_image{font-size: 50px;
+                        color: rgb(78, 20, 145);
+                                    #id_image{font-size: 20px;
+                                    }
+
+                    }
+                }
+                button{background-color:  #2e9145; 
+                    width: 150px;
+                    font-weight: bolder;    
+
+                }
+            }
+        }
     }
+
+}
+@media(max-width:995px){
+    body{
+        header {
+            .container-fluid {
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 180px;
+                }
+                .row {
+                    display: block;
+                }
+                .title{
+                    h1{
+                        text-align: center;
+                        margin: auto;
+                        &::after{
+                            display: block;
+                            width: 40px;
+                            height: 150px;
+                            margin: auto;
+                            position: relative;
+                            transform: rotate(90deg) translate(-100%,30%);
+                        }
+                    }
+                    h2 {
+                        @include text-gra(#2e9145, #99ca3d);
+                        font-size: 80px;
+                        width: 300px;
+                        margin: -50px auto 20px;
+                    }
+                }
+                
+            }
+            .container{
+                height: 1000px;
+            h1{font-size: 80px;
+                padding-left: 40%;  
+                color: rgba(0, 133, 29, 0.589);
+
+
+            }           
+            .row{
+                border: 3px outset #2e9145;
+                margin: auto;
+                height: 800px;
+                background-color: white;
+                form{
+                    margin: auto;
+                    height: 1000px;
+                    #div_id_title{
+                        font-size: 50px;
+                        width: 500px;
+                        color: rgb(78, 20, 145);
+                        div{border: 1px outset cadetblue;}
+                    }
+                    #div_id_body{font-size: 50px;
+                        color: rgb(78, 20, 145);
+                        div{border: 1px outset cadetblue;}
+
+                    }
+                    #div_id_image{font-size: 50px;
+                        color: rgb(78, 20, 145);
+                                    #id_image{font-size: 20px;
+                                    }
+
+                    }
+                }
+                button{background-color:  #2e9145; 
+                    width: 150px;
+                    font-weight: bolder;    
+
+                }
+
+            }
+        }
+    }
+}
 }
 @media(max-width:771px){
     body{
@@ -120,9 +239,50 @@ body {
                 }
                 
             }
-            
+            .container{
+                height: 1000px;
+            h1{font-size: 80px;
+                padding-left: 40%;  
+                color: rgba(0, 133, 29, 0.589);
+
+
+            }           
+            .row{
+                border: 3px outset #2e9145;
+                margin: auto;
+                height: 800px;
+                background-color: white;
+                form{
+                    margin: auto;
+                    height: 1000px;
+                    #div_id_title{
+                        font-size: 50px;
+                        width: 400px;
+                        color: rgb(78, 20, 145);
+                        div{border: 1px outset cadetblue;}
+                    }
+                    #div_id_body{font-size: 50px;
+                        color: rgb(78, 20, 145);
+                        div{border: 1px outset cadetblue;}
+
+                    }
+                    #div_id_image{font-size: 50px;
+                        color: rgb(78, 20, 145);
+                                    #id_image{font-size: 20px;
+                                    }
+
+                    }
+                }
+                button{background-color:  #2e9145; 
+                    width: 150px;
+                    font-weight: bolder;    
+
+                }
+
+            }
         }
     }
+}
 }
 @media(max-width:660px){
     body{
@@ -154,5 +314,44 @@ body {
                 }
             }
         }
-    }
-}
+    } .container{
+        height: 1000px;
+    h1{font-size: 80px;
+        padding-left: 40%;  
+        color: rgba(0, 133, 29, 0.589);
+
+
+    }           
+    .row{
+        border: 3px outset #2e9145;
+        margin: auto;
+        height: 800px;
+        background-color: white;
+        form{
+            margin: auto;
+            height: 1000px;
+            #div_id_title{
+                font-size: 50px;
+                width: 500px;
+                color: rgb(78, 20, 145);
+                div{border: 1px outset cadetblue;}
+            }
+            #div_id_body{font-size: 50px;
+                color: rgb(78, 20, 145);
+                div{border: 1px outset cadetblue;}
+
+            }
+            #div_id_image{font-size: 50px;
+                color: rgb(78, 20, 145);
+                            #id_image{font-size: 20px;
+                            }
+
+            }
+        }
+        button{background-color:  #2e9145; 
+            width: 150px;
+            font-weight: bolder;    
+
+        }
+
+}}}
