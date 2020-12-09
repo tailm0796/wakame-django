@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'wakame-db',
         'USER': 'postgres',
-        'PASSWORD': '2861971',
+        'PASSWORD': '1234567890',
         'HOST': 'localhost',
         'PORT': '5432',
     }
