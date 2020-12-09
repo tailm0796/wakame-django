@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "BT-JavaScript"
+		"liveServer.settings.multiRootWorkspaceName": "BT-JavaScript",
+		"python.pythonPath": "C:\\Users\\tailm\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
 	}
 }
