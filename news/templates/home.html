@@ -158,13 +158,17 @@
                 <p><i class="far fa-envelope px-sm-2"></i>Wakame-uit@gmail.com</p>
                 <p><i class="fas fa-mobile-alt px-sm-2"></i>+84 969 939 706</p>
             </div>
-            <div class="col-sm-5 offset-sm-3 text-center">
+           
+                    {% if user.is_authenticated %}
+        {% else %}
+         <div class="col-sm-5 offset-sm-3 text-center">
                 <h3 class="pb-sm-2 invite">THAM GIA CÙNG CHÚNG MÌNH</h3>
                 <div>
                     <a name="" id="" class="btn btn-block btn-danger" href="#" role="button">Đăng
                         Nhập</a>
                     <a name="" id="" class="btn btn-block btn-dark" href="#" role="button">Đăng Ký</a>
                 </div>
+        {% endif %}
             </div>
         </div>
     </div>
