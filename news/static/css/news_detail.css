@@ -45,6 +45,44 @@ body .navi-menu nav #nav-logo {
   width: 120px;
 }
 
+body header .container .row {
+  background-color: #ecf3ec;
+}
+
+body header .container .row h1 {
+  padding-top: 30px;
+  color: #050e05;
+  font-weight: bold;
+  padding-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+body header .container .row .human-date #i1 {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+body header .container .row p {
+  padding-left: 50px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+body header .container .row hr {
+  border: solid 0.5px #cac8c8;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+body header .container .row .img-detail {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 body header .container-fluid {
   background-image: url("../SVG/Asset 3.svg");
 }
@@ -80,6 +118,7 @@ body header .container-fluid .title h1 {
   text-align: right;
   width: 500px;
   position: relative;
+  color: rebeccapurple;
 }
 
 body header .container-fluid .title h1::after {
