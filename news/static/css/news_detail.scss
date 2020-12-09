@@ -44,6 +44,47 @@ body {
         }
     }
     header {
+        .container {
+            .row{
+                background-color: rgb(236, 243, 236);
+    
+                h1{
+                    padding-top: 30px;
+                    color: rgb(5, 14, 5);
+                    font-weight: bold;
+                    padding-bottom: 25px;
+                    width: 100%;
+                    text-align: center;
+                }
+                .human-date{                  
+                    #i1{
+                        padding-top: 10px;
+                        
+                        padding-left: 30px;
+                        
+                      }
+                }
+                p{
+                    padding-left: 50px;
+                    padding-right: 30px;
+                    font-size: 18px;
+                }
+                hr{
+                    border: solid 0.5px rgb(202, 200, 200);
+                    width: 80%;
+                    margin-left: 10%;
+                    margin-top: 20px;
+                }
+                .img-detail{
+                    width: 80%;
+                    margin-left: 10%;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                
+            }
+            
+        }
         .container-fluid {
             background-image: url("../SVG/Asset\ 3.svg");
             &::before {
@@ -53,10 +94,12 @@ body {
             }
             .row {
                 justify-content: center;
+                
             }
             .title{
                 display: flex;
                 align-items: center;
+                
                 h1{
                     @include text-gra(#2e9145, #99ca3d);
                     font-size: 80px;
@@ -74,6 +117,7 @@ body {
                         top: 25px;
                         right: -50px;
                     }
+                    color: rebeccapurple;
                 }
                 h2 {
                     @include text-gra(#2e9145, #99ca3d);
