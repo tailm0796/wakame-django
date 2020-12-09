@@ -14,7 +14,16 @@
     <div class="container">
         <div class="row">
             <h1>{{ post.title }}</h1>
+            <hr>
+            <p class="human-date">
+                <i class="fa fa-male" id='i1'> {{ post.author }}   </i>   
+                <i class="fa fa-clock"> {{ post.date }}</i>  
+            </p>
+                       
+            <img class="img-detail" src="{% if post.image %}{{ post.image.url }}{% endif %}" alt="">
+            
             <p>{{ post.body|linebreaks }}</p>
+
         </div>
         {% if user.is_authenticated %}
         <div class="row justify-content-center">
