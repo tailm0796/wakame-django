@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block css_file %}
-    {% static 'css/home.css' %}
+{% static 'css/home.css' %}
 {% endblock css_file %}
 {% block contents %}
 <header>
@@ -163,17 +163,15 @@
                 <p></p>
                 {% else %}
                 <p>
-                    <h3 class="pb-sm-2 invite">THAM GIA CÙNG CHÚNG MÌNH</h3>
-                    <div>
-                        <a name="" id="" class="btn btn-block btn-danger" href="{% url 'login' %}" role="button">Đăng
-                            Nhập</a>
-                        <a name="" id="" class="btn btn-block btn-dark" href="{% url 'signup' %}" role="button">Đăng Ký</a>
-                    </div>
+                <h3 class="pb-sm-2 invite">THAM GIA CÙNG CHÚNG MÌNH</h3>
+                <div>
+                    <a name="" id="" class="btn btn-block btn-danger" href="{% url 'login' %}" role="button">Đăng
+                        Nhập</a>
+                    <a name="" id="" class="btn btn-block btn-dark" href="{% url 'signup' %}" role="button">Đăng Ký</a>
+                </div>
                 </p>
                 {% endif %}
-                
             </div>
         </div>
-    </div>
 </footer>
 {% endblock contents %}
